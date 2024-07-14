@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Image from '../../atoms/Image';
+import Image from '../../atoms/image/Image';
 import StyledProductDetailPage from './ProductDetailPage.style';
 import useDataFetchQuery from '../../custom-hook/useDataFetchQuery';
 import { ProductDataType } from "../../types/ecommerce";

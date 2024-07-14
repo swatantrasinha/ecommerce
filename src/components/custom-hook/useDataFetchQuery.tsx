@@ -1,7 +1,7 @@
 import { useReducer, useEffect } from 'react';
-import { ActionType, CategoryDataType, ProductDataType, StateType } from '../types/ecommerce';
+import { ActionType, StateType } from '../types/ecommerce';
 
- 
+ // Custom Hook for Aysnc Data fecth
 
 const dataFetchReducer = (state: StateType, action: ActionType) => {
     switch (action.type) {

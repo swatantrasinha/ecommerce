@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import {StoredCategoryData} from '../types/ecommerce'
+
+// custom hook for storing and retrieving value from localStorage
+
 function getSavedValue(key: string, initialValue:  null | StoredCategoryData) {
     const storedValue = localStorage.getItem(key) as string;
     const savedValue = JSON.parse(storedValue);

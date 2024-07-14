@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import Image from '../../atoms/Image';
+import Image from '../../atoms/image/Image';
 import StyledProductList from './ProductList.style';
-import {type StoredCategoryData , type ProductDataType} from '../../types/ecommerce'
-type ProductListPropsType = {
-  category: StoredCategoryData,
-  products: ProductDataType[]
-}
+import {type ProductListPropsType} from './ProductList.type';
+import {type ProductDataType} from '../../types/ecommerce';
+
+
 const ProductList = ({category, products}: ProductListPropsType) => {
      
   return (

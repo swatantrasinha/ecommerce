@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
+    // delete localstorage data when app is removed
   return () => {
-    console.log('delete localStorage');
     if(window.localStorage.categoryData) {
       window.localStorage.removeItem("categoryData");
     }
